@@ -106,7 +106,7 @@
   font-family: "Outfit";
   font-size: 24px;
   font-weight: 700;
-  color: #00B96B;
+  color: #00b96b;
 }
 
 .menu-scrolling.homemenu {
@@ -229,7 +229,7 @@
 }
 
 .main-content .scroll-box {
-  font-family: 'Outfit';
+  font-family: "Outfit";
   position: absolute;
   bottom: 40px;
   left: 50%;
@@ -264,7 +264,7 @@
   color: #3dd495;
   font-size: 18px;
   font-weight: 700;
-  font-family: 'Outfit';
+  font-family: "Outfit";
 }
 
 /* about us 섹션 */
@@ -291,7 +291,6 @@
 .abouticon-box .about-icon {
   width: 36px;
   height: 36px;
-
 }
 
 .abouticon-box span {
@@ -326,11 +325,11 @@
 }
 
 .exportcapacity-intro .can-point-text {
-  color: #3DD495;
+  color: #3dd495;
 }
 
 .can-titlebox .can-point-text {
-  color: #00B96B;
+  color: #00b96b;
 }
 
 .can-infoarea {
@@ -405,7 +404,7 @@
 
 .ceo-sign {
   text-align: right;
-  padding-top: 20px
+  padding-top: 20px;
 }
 
 .ceo-sign .econerge-ceo {
@@ -467,7 +466,7 @@
 .export-quantity .quantity-num {
   font-weight: 700;
   font-size: 60px;
-  color: #00B96B;
+  color: #00b96b;
 }
 
 /* 1.2섹션 */
@@ -478,7 +477,7 @@
 
 .annual-growth .annual-container {
   padding: 100px 100px;
-  background: linear-gradient(rgba(17, 17, 17, 1) 0%, rgba(38, 38, 38, 1)100%);
+  background: linear-gradient(rgba(17, 17, 17, 1) 0%, rgba(38, 38, 38, 1) 100%);
   border-top-right-radius: 200px;
   text-align: center;
   display: flex;
@@ -499,7 +498,7 @@
 }
 
 .annual-two-section {
-  padding-top: 120px
+  padding-top: 120px;
 }
 
 .annual-two-section .eco-sub50 {
@@ -515,7 +514,7 @@
   color: #3dd495;
   font-size: 20px;
   font-weight: 700;
-  font-family: 'Outfit';
+  font-family: "Outfit";
   padding-bottom: 12px;
 }
 
@@ -581,14 +580,13 @@
   color: rgba(255, 255, 255, 50%);
   font-size: 12px;
   font-weight: 400;
-  font-family: 'Outfit';
+  font-family: "Outfit";
   white-space: nowrap;
   transition: height 1.5s cubic-bezier(0.6, 0.4, 0.4, 1.1);
 }
 
-
 .tooltipContent.main-tooltip {
-  color: #00B96B;
+  color: #00b96b;
   font-weight: 700;
   font-size: 20px;
   position: absolute;
@@ -598,7 +596,7 @@
   gap: 4px;
   transform: translateX(-50%);
   transition: height 1.5s cubic-bezier(0.6, 0.4, 0.4, 1.1);
-  color: #00B96B;
+  color: #00b96b;
   font-size: 20px;
   font-weight: 700;
 }
@@ -613,7 +611,7 @@
 }
 
 .main-tooltip span {
-  color: #00B96B;
+  color: #00b96b;
   font-size: 14px;
 }
 
@@ -633,7 +631,7 @@
 }
 
 .annual-chart .chart-num li .bar.maingraph {
-  background-color: #3DD495;
+  background-color: #3dd495;
 }
 
 .annual-chart .chart-bar {
@@ -701,13 +699,13 @@
 }
 
 .use-maininfo {
-  color: #3DD495;
+  color: #3dd495;
   font-size: 20px;
   font-weight: 500;
 }
 
 .use-aluminum-intro {
-  background: linear-gradient(rgba(17, 17, 17, 1) 0%, rgba(38, 38, 38, 1)100%);
+  background: linear-gradient(rgba(17, 17, 17, 1) 0%, rgba(38, 38, 38, 1) 100%);
   text-align: center;
   margin: 0 auto;
 }
@@ -804,16 +802,14 @@
 
 .company-gtitle {
   font-size: 16px;
-  color: #3DD495;
+  color: #3dd495;
   padding-bottom: 11px;
   font-weight: 400;
 }
 
 .cpany-borderhidden {
   position: absolute;
-  background: linear-gradient(rgba(0, 0, 0, 0%) 0%,
-      rgba(0, 0, 0, 80%)30%,
-      rgba(0, 0, 0, 100%)100%);
+  background: linear-gradient(rgba(0, 0, 0, 0%) 0%, rgba(0, 0, 0, 80%) 30%, rgba(0, 0, 0, 100%) 100%);
   width: 100%;
   height: 100%;
   left: 0;
@@ -823,9 +819,7 @@
 
 .cpany-hidden {
   position: absolute;
-  background: linear-gradient(rgba(0, 0, 0, 0%) 0%,
-      rgba(0, 0, 0, 80%)30%,
-      rgba(0, 0, 0, 100%)100%);
+  background: linear-gradient(rgba(0, 0, 0, 0%) 0%, rgba(0, 0, 0, 80%) 30%, rgba(0, 0, 0, 100%) 100%);
   width: 100%;
   height: 100%;
   left: 0;
@@ -902,7 +896,6 @@
   display: flex;
   justify-content: center;
   text-align: center;
-
 }
 
 .eco-companybox {
@@ -922,7 +915,7 @@
 
 .eco-companybox .w-maintitle {
   color: rgba(255, 255, 255, 90%);
-  font-family: 'Outfit';
+  font-family: "Outfit";
   font-size: 36px;
   z-index: 2;
   height: 40px;
@@ -931,7 +924,7 @@
 
 .eco-companybox .b-maintitle {
   color: rgba(0, 0, 0, 90%);
-  font-family: 'Outfit';
+  font-family: "Outfit";
   font-size: 36px;
   height: 40px;
   font-weight: 500;
@@ -951,7 +944,6 @@
   z-index: 2;
   position: relative;
   padding-top: 40px;
-
 }
 
 .eco-companybox .k-ecovideo {
@@ -974,10 +966,10 @@
 .ct-box h2 {
   width: 100%;
   text-align: center;
-  color: #3DD495;
+  color: #3dd495;
   font-size: 36px;
   font-weight: 500;
-  font-family: 'Outfit';
+  font-family: "Outfit";
   padding-bottom: 40px;
 }
 
@@ -1126,7 +1118,6 @@ textarea::placeholder {
 /* 스크롤 애니메이션 */
 .scroll-box svg {
   animation: scroll 1.5s infinite;
-
 }
 
 .scroll-box a {
@@ -1171,8 +1162,7 @@ textarea::placeholder {
 }
 
 /* 반응형 */
-@media screen and (max-width:768px) {
-
+@media screen and (max-width: 768px) {
   .company-role {
     padding: 0 30px 80px 30px;
     background-color: #fff;
@@ -1188,14 +1178,14 @@ textarea::placeholder {
 
   .eco-companybox .w-maintitle {
     color: rgba(255, 255, 255, 90%);
-    font-family: 'Outfit';
+    font-family: "Outfit";
     font-size: 36px;
     font-weight: 500;
   }
 
   .eco-companybox .b-maintitle {
     color: rgba(0, 0, 0, 90%);
-    font-family: 'Outfit';
+    font-family: "Outfit";
     font-size: 36px;
     font-weight: 500;
   }
@@ -1228,16 +1218,14 @@ textarea::placeholder {
 
   .company-gtitle {
     font-size: 24px;
-    color: #3DD495;
+    color: #3dd495;
     padding-bottom: 16px;
     font-weight: 500;
   }
 
   .cpany-borderhidden {
     position: absolute;
-    background: linear-gradient(rgba(0, 0, 0, 0%) 0%,
-        rgba(0, 0, 0, 80%)30%,
-        rgba(0, 0, 0, 90%)100%);
+    background: linear-gradient(rgba(0, 0, 0, 0%) 0%, rgba(0, 0, 0, 80%) 30%, rgba(0, 0, 0, 90%) 100%);
     width: 100%;
     height: 100%;
     left: 0;
@@ -1246,9 +1234,7 @@ textarea::placeholder {
 
   .cpany-hidden {
     position: absolute;
-    background: linear-gradient(rgba(0, 0, 0, 0%) 0%,
-        rgba(0, 0, 0, 80%)30%,
-        rgba(0, 0, 0, 90%)100%);
+    background: linear-gradient(rgba(0, 0, 0, 0%) 0%, rgba(0, 0, 0, 80%) 30%, rgba(0, 0, 0, 90%) 100%);
     width: 100%;
     height: 100%;
     left: 0;
@@ -1293,7 +1279,7 @@ textarea::placeholder {
   }
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width: 700px) {
   .contact .ct-box {
     padding: 100px 30px;
   }
@@ -1317,12 +1303,9 @@ textarea::placeholder {
   .about-mission {
     padding: 80px 30px;
   }
-
-
 }
 
-@media screen and (max-width:430px) {
-
+@media screen and (max-width: 430px) {
   .main-content video,
   .hidden-ground {
     border-top-right-radius: 185px;
@@ -1366,7 +1349,6 @@ textarea::placeholder {
     padding: 100px 30px;
   }
 }
-
 
 /* 키프레임 */
 @-webkit-keyframes scroller {
