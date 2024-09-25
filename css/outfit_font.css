@@ -1,0 +1,17 @@
+/* 영문폰트 */
+@font-face {
+    font-family: 'Outfit';
+    src: url(../font/outfit/Outfit-Regular.ttf) format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url(../font/outfit/Outfit-Medium.ttf) format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Outfit';
+    src: url(../font/outfit/Outfit-Bold.ttf) format('truetype');
+    font-weight: 700;
+}

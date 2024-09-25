@@ -1,0 +1,1384 @@
+.container {
+  background-color: rgba(0, 0, 0, 5%);
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+}
+.exportintro-box .ecoexport-text.nowrap-content {
+  white-space: nowrap;
+}
+.nowrap-content {
+  white-space: nowrap;
+}
+.about-title-up,
+.about-load-up,
+.can-box-up,
+.mission-title-up,
+.value-title-up,
+.ceo-box-up,
+.vision-text-up,
+.global-text-up,
+.alum-text-up,
+.business-text-up,
+.export-txtarea {
+  opacity: 0;
+}
+
+.logo {
+  display: flex;
+  height: 15px;
+}
+
+.eco-sse {
+  max-width: 768px;
+  padding-top: 60px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  max-width: 768px;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background: rgb(255, 255, 255, 100%);
+}
+
+.exportcapacity-intro {
+  width: 100%;
+  background-color: #fff;
+}
+
+/* 헤더영역 */
+.nav-container {
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 햄버거 드롭다운 메뉴 */
+.eco-menubox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.eco-dropmenubox.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.eco-dropmenubox {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+  transform: translateY(-10px);
+  background: rgb(255, 255, 255, 90%);
+  width: 100%;
+  transition: all 0.3s ease-out;
+  transform-origin: top;
+}
+
+.eco-menu {
+  padding: 40px 0;
+  gap: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.menu-scrolling {
+  font-family: "Outfit";
+  font-size: 24px;
+  font-weight: 700;
+  color: #00B96B;
+}
+
+.menu-scrolling.homemenu {
+  color: #262626;
+}
+
+.menutoggle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.menutoggle .small-line {
+  animation: lineback 0.3s;
+  width: 10px;
+  border: 1px solid rgba(0, 0, 0, 80%);
+  transition: transform 0.3s ease;
+}
+
+.menutoggle .toggle-line {
+  width: 16px;
+  border: 1px solid rgba(0, 0, 0, 80%);
+  transition: transform 0.3s ease;
+}
+
+.menutoggle.active .small-line {
+  animation: line 0.3s;
+  opacity: 0;
+}
+
+.menutoggle.active .toggle-line:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.menutoggle.active .toggle-line:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+@keyframes line {
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  30% {
+    opacity: 0.7;
+    transform: translateX(1px);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: translateX(2px);
+  }
+
+  70% {
+    opacity: 0.3;
+    transform: translateX(2px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(3px);
+  }
+}
+
+@keyframes lineback {
+  0% {
+    opacity: 0;
+    transform: translateX(3px);
+  }
+
+  30% {
+    opacity: 0.3;
+    transform: translateX(2px);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: translateX(2px);
+  }
+
+  70% {
+    opacity: 0.7;
+    transform: translateX(1px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/* 메인 영역 */
+.main-content {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  height: 738px;
+}
+
+.hidden-ground {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 40%);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  border-top-right-radius: 200px;
+}
+
+.main-content video {
+  border-top-right-radius: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.main-content .scroll-box {
+  font-family: 'Outfit';
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  z-index: 10;
+  opacity: 0.8;
+}
+
+.eco-maintxt {
+  position: absolute;
+  top: 50%;
+  transform: translate(-0%, -50%);
+  left: 90px;
+  z-index: 10;
+}
+
+.eco-maintxt .logo-sub {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 70%);
+  padding: 16px 0 30px 0;
+}
+
+.eco-introarea .intro-text {
+  color: #fff;
+  font-weight: 500;
+  font-size: 40px;
+  white-space: nowrap;
+}
+
+.title-logotext {
+  color: #3dd495;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Outfit';
+}
+
+/* about us 섹션 */
+.aboutus-iconarea {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.abouticon-box {
+  display: flex;
+  background-color: #f2f2f7;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  gap: 8px;
+  width: 120px;
+  height: 120px;
+}
+
+.abouticon-box .about-icon {
+  width: 36px;
+  height: 36px;
+
+}
+
+.abouticon-box span {
+  color: rgba(0, 0, 0, 80%);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.about-mission {
+  width: 100%;
+  background: url(../image/about_back.jpg) no-repeat center center;
+  padding: 100px;
+}
+
+.mission-info {
+  padding-bottom: 80px;
+}
+
+.mission-text {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.sub-txt {
+  white-space: normal;
+}
+
+.value-txt {
+  font-size: 28px;
+  font-weight: 500;
+  font-family: "Outfit";
+}
+
+.exportcapacity-intro .can-point-text {
+  color: #3DD495;
+}
+
+.can-titlebox .can-point-text {
+  color: #00B96B;
+}
+
+.can-infoarea {
+  padding-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.can-titlebox {
+  display: flex;
+  padding-bottom: 6px;
+}
+
+.can-topic {
+  color: #1c1c1e;
+  font-weight: 500;
+}
+
+.can-infoarea p {
+  color: #1c1c1e;
+  font-size: 14px;
+}
+
+.can-infobox {
+  background-color: rgb(242, 242, 247, 95%);
+  border-radius: 12px;
+  width: 181px;
+  padding: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.can-infotxt {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1c1c1e;
+  font-family: "Outfit";
+}
+
+.can-subtxt {
+  color: #3a3a3c;
+}
+
+.ceo-massage {
+  padding: 100px;
+  width: 100%;
+  background: url(../image/ceo_back.jpg) no-repeat center center;
+}
+
+.ceo-intro-txtbox {
+  padding: 12px 0 20px;
+}
+
+.ceo-infotitle-txt {
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.ceo-massage .ceointro-subtxt,
+.one-section-ceointro p {
+  color: rgba(0, 0, 0, 80%);
+  font-size: 16px;
+}
+
+.two-section-ceointro {
+  padding: 20px 0;
+}
+
+.ceo-sign {
+  text-align: right;
+  padding-top: 20px
+}
+
+.ceo-sign .econerge-ceo {
+  color: #636366;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.ceo-sign .ceo-name {
+  color: #111;
+  font-size: 16px;
+  font-weight: 500;
+  padding-top: 6px;
+}
+
+/* 수출량 섹션  */
+.exportintro-box {
+  padding: 100px 98px;
+  display: flex;
+  gap: 100px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.exportintro-box .ecoexport-text {
+  font-weight: 500;
+  font-size: 24px;
+  color: #000;
+  white-space: normal;
+}
+
+.pdtop-12 {
+  padding-top: 12px;
+}
+
+.export-quantity {
+  width: 100%;
+}
+
+.export-quantity .title-quantity {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 50%);
+}
+
+.export-quantity .quantity-numbox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #f2f2f8;
+  border-radius: 12px;
+  padding: 40px 0;
+  margin-top: 20px;
+}
+
+.export-quantity .quantity-num {
+  font-weight: 700;
+  font-size: 60px;
+  color: #00B96B;
+}
+
+/* 1.2섹션 */
+.annual-growth {
+  width: 100%;
+  background-color: #fff;
+}
+
+.annual-growth .annual-container {
+  padding: 100px 100px;
+  background: linear-gradient(rgba(17, 17, 17, 1) 0%, rgba(38, 38, 38, 1)100%);
+  border-top-right-radius: 200px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.annual-subintro,
+.use-subintro {
+  padding: 16px 0 40px 0;
+}
+
+.annual-growth .annual-rullet {
+  color: #00b96b;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.annual-two-section {
+  padding-top: 120px
+}
+
+.annual-two-section .eco-sub50 {
+  padding: 12px 0 40px 0;
+}
+
+/* 공통 css */
+.chart-num {
+  display: flex;
+}
+
+.pointer-num {
+  color: #3dd495;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Outfit';
+  padding-bottom: 12px;
+}
+
+.anu-title-text {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.use-title-text {
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 16px;
+}
+
+.use-title-emp {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  padding: 0 0 12px;
+}
+
+.eco-sub80 {
+  color: rgba(255, 255, 255, 80%);
+}
+
+.eco-sub50 {
+  color: rgba(255, 255, 255, 50%);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.eco-sub30 {
+  color: rgba(255, 255, 255, 30%);
+  font-size: 12px;
+}
+
+/* 차트 */
+.chart-num {
+  height: 100%;
+  margin-top: 40px;
+}
+
+.annual-chart .chart-num li {
+  position: relative;
+  width: 100%;
+}
+
+.annual-chart .chart-bar {
+  position: relative;
+  bottom: 0;
+}
+
+.annual-chart {
+  height: 132px;
+}
+
+.tooltipContent {
+  position: absolute;
+  bottom: calc(100% + 5px);
+  /* .tooltipContent와 .bar 간의 간격 조절 */
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 50%);
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'Outfit';
+  white-space: nowrap;
+  transition: height 1.5s cubic-bezier(0.6, 0.4, 0.4, 1.1);
+}
+
+
+.tooltipContent.main-tooltip {
+  color: #00B96B;
+  font-weight: 700;
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transform: translateX(-50%);
+  transition: height 1.5s cubic-bezier(0.6, 0.4, 0.4, 1.1);
+  color: #00B96B;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.annual-chart .chart-bar .chart-ym {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 50%);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%, 25px);
+}
+
+.main-tooltip span {
+  color: #00B96B;
+  font-size: 14px;
+}
+
+.annual-chart .chart-num li .bar {
+  width: 40px;
+  border-top-right-radius: 20px;
+  background-color: rgba(255, 255, 255, 30%);
+  position: absolute;
+  left: 50%;
+  font-size: 12px;
+  bottom: 0;
+  height: 50%;
+  /* 수정된 부분 */
+  overflow: hidden;
+  font-weight: bold;
+  transform: translate(-50%, 0%);
+}
+
+.annual-chart .chart-num li .bar.maingraph {
+  background-color: #3DD495;
+}
+
+.annual-chart .chart-bar {
+  position: relative;
+  bottom: 0;
+}
+
+.annual-chart .chart-num li div {
+  position: absolute;
+  width: 100%;
+}
+
+/* 상승요인 */
+
+.annual-sources {
+  padding: 42px 0;
+}
+
+.annual-factorbox {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.annual-factor {
+  background: rgba(255, 255, 255, 10%);
+  text-align: left;
+  padding: 20px;
+  max-width: 330px;
+  border-radius: 12px;
+}
+
+.annual-factor .factor {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 50%);
+  padding-bottom: 12px;
+}
+
+.annual-factorbox .factor-title {
+  white-space: initial;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 80%);
+}
+
+.annual-factorbox .factor-subtext {
+  white-space: initial;
+  color: rgba(255, 255, 255, 80%);
+}
+
+.eco-downlogo {
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}
+
+.eco-logo {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* 알루미늄 사용처 */
+.use-intro {
+  padding-bottom: 40px;
+}
+
+.use-maininfo {
+  color: #3DD495;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.use-aluminum-intro {
+  background: linear-gradient(rgba(17, 17, 17, 1) 0%, rgba(38, 38, 38, 1)100%);
+  text-align: center;
+  margin: 0 auto;
+}
+
+.usealum {
+  padding: 100px 48px;
+}
+
+.alum-boxarea {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  row-gap: 40px;
+}
+
+.usealum-box {
+  width: 330px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: rgba(255, 255, 255, 10%);
+  padding: 0 30px 0 0;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.alum-subtext {
+  background: rgba(0, 0, 0, 80%);
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  padding: 30px;
+  backdrop-filter: blur(5px);
+}
+
+.can-emp {
+  background: url(../image/can_back.jpg) no-repeat center;
+}
+
+.car-emp {
+  background: url(../image//car_back.jpg) no-repeat center;
+}
+
+.conturc-emp {
+  background: url(../image/construction_back.jpg) no-repeat center;
+}
+
+.packaging-emp {
+  background: url(../image/packaging_back.jpg) no-repeat center;
+}
+
+.signboard-emp {
+  background: url(../image/signboard_back.jpg) no-repeat center;
+}
+
+.mercan-emp {
+  background: url(../image/mercantile_back.jpg) no-repeat center;
+}
+
+.trans-emp {
+  background: url(../image/transport_back.jpg) no-repeat center;
+}
+
+.aerospace-emp {
+  background: url(../image/aerospace_back.jpg) no-repeat center;
+}
+
+.alum-subtext .eco-sub80 {
+  white-space: initial;
+}
+
+/* 회사소개 섹션 */
+.company-role {
+  padding: 0px 48px 80px 48px;
+  background-color: #fff;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.cpany-text-box {
+  z-index: 1;
+  padding: 0px 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.company-wtitle {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.company-gtitle {
+  font-size: 16px;
+  color: #3DD495;
+  padding-bottom: 11px;
+  font-weight: 400;
+}
+
+.cpany-borderhidden {
+  position: absolute;
+  background: linear-gradient(rgba(0, 0, 0, 0%) 0%,
+      rgba(0, 0, 0, 80%)30%,
+      rgba(0, 0, 0, 100%)100%);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  border-radius: 12px;
+}
+
+.cpany-hidden {
+  position: absolute;
+  background: linear-gradient(rgba(0, 0, 0, 0%) 0%,
+      rgba(0, 0, 0, 80%)30%,
+      rgba(0, 0, 0, 100%)100%);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  border-radius: 12px;
+}
+
+.w-maintext {
+  white-space: initial;
+  color: rgb(255, 255, 255, 90%);
+  font-size: 14px;
+}
+
+.eco-cpany-borbox {
+  position: relative;
+  background: url(../image/ecompany_smallintro2.jpg) no-repeat center;
+  width: 220px;
+  height: 290px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cpany-box1 {
+  background: url(../image/ecompany_smallintro.jpg) no-repeat center;
+  height: 290px;
+}
+
+.cpany-box2 {
+  background: url(../image/ecompany_smallintro3.jpg) no-repeat center;
+  height: 290px;
+}
+
+.cpany-box2 .company-gtitle {
+  padding: 0;
+}
+
+.cpany-box2 .company-wtitle {
+  padding-bottom: 11px;
+}
+
+.eco-companyintro-box {
+  position: relative;
+  display: flex;
+  width: 220px;
+  border-radius: 12px;
+}
+
+/* 에코너지 2번째 비디오 섹션 */
+.eco-infovideo {
+  background-color: rgba(0, 0, 0, 80%);
+}
+
+.ecosec {
+  position: relative;
+  text-align: center;
+  background-color: #fff;
+}
+
+.top-black-sec {
+  position: absolute;
+  background-color: #252525;
+  height: 330px;
+  width: 100%;
+}
+
+.top-green-sec {
+  position: absolute;
+  top: 0;
+  height: 330px;
+  width: 100%;
+  z-index: 1;
+  background-color: #3dd495;
+  border-top-right-radius: 200px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.eco-companybox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 48px 40px 48px;
+}
+
+.logo-title {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.eco-companybox .w-maintitle {
+  color: rgba(255, 255, 255, 90%);
+  font-family: 'Outfit';
+  font-size: 36px;
+  z-index: 2;
+  height: 40px;
+  font-weight: 500;
+}
+
+.eco-companybox .b-maintitle {
+  color: rgba(0, 0, 0, 90%);
+  font-family: 'Outfit';
+  font-size: 36px;
+  height: 40px;
+  font-weight: 500;
+  z-index: 2;
+}
+
+.eco-companybox .b-maintext {
+  white-space: initial;
+  color: rgba(0, 0, 0, 80%);
+  max-width: 469px;
+  font-weight: 500;
+  padding-top: 16px;
+  z-index: 2;
+}
+
+.eco-companybox .videobox {
+  z-index: 2;
+  position: relative;
+  padding-top: 40px;
+
+}
+
+.eco-companybox .k-ecovideo {
+  background: #000;
+  box-shadow: 2px 6px 10px 2px rgba(0, 0, 0, 30%);
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+/* contact start */
+.contact .ct-box {
+  z-index: 1;
+  width: 100%;
+  max-width: 768px;
+  padding: 100px 100px;
+  background: #262626;
+}
+
+.ct-box h2 {
+  width: 100%;
+  text-align: center;
+  color: #3DD495;
+  font-size: 36px;
+  font-weight: 500;
+  font-family: 'Outfit';
+  padding-bottom: 40px;
+}
+
+.ct-box .col {
+  margin: 0 0 14px;
+}
+
+.required-text {
+  padding: 40px 0 16px;
+  font-weight: 500;
+  color: rgb(255, 255, 255, 80%);
+}
+
+.ct-box .col span,
+.ct-box .col input {
+  color: #fff;
+}
+
+.ct-box .col .inputBox {
+  width: 100%;
+  color: transparent;
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 50%);
+}
+
+.ct-box .col .inputBox input,
+.ct-box .col .inputBox textarea {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  resize: none;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 0;
+}
+
+.ct-box .row101 .col .inputBox input,
+.ct-box .row101 .col .inputBox textarea {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 0 10px;
+  z-index: 1;
+  color: #000;
+}
+
+.ct-box .col .inputBox .text {
+  font-size: 16px;
+  padding: 0 10px;
+  display: block;
+}
+
+.ct-box .col .textarea {
+  height: 200px;
+}
+
+.ct-box .col .btn {
+  cursor: pointer;
+  border: none;
+  padding: 16px 0px;
+  outline: none;
+  background: #000000;
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  width: 100%;
+  opacity: 0.4;
+}
+
+.ct-box .col .btn.on {
+  opacity: 1;
+}
+
+.ct-box .ct_send {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.ct-box .message_box .col {
+  margin: 0;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgb(255, 255, 255, 30%);
+}
+
+/*footer start*/
+.ft {
+  background-color: rgba(0, 0, 0, 95%);
+}
+
+.ft .ft_copyright {
+  font-size: 12px;
+  padding-top: 16px;
+  color: rgb(255, 255, 255, 50%);
+  font-weight: 400;
+}
+
+.ft .ft_box {
+  text-align: center;
+  display: block;
+  padding: 40px 0;
+}
+
+.ft .ft_logo {
+  margin-bottom: 8px;
+}
+
+.ft .ft_logo .ft_title {
+  padding-bottom: 5px;
+}
+
+.ft .ft_info .ft_text {
+  display: flex;
+  justify-content: center;
+}
+
+.ft .ft_info .ft_lasttx {
+  flex-direction: column;
+}
+
+.ft_info {
+  text-align: center;
+}
+
+.ft .ft_info li,
+.ft .ft_info p,
+.ft .ft_info li,
+.ft .ft_info span {
+  font-size: 12px;
+  color: rgb(255, 255, 255, 80%);
+}
+
+.ft .ft_info .ft_emp2 {
+  display: flex;
+  justify-content: center;
+}
+
+/* 스크롤 애니메이션 */
+.scroll-box svg {
+  animation: scroll 1.5s infinite;
+
+}
+
+.scroll-box a {
+  cursor: default;
+  position: absolute;
+  bottom: 20px;
+  z-index: 100;
+  display: inline-block;
+  transition: opacity 0.3s;
+  padding-top: 28px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+}
+
+.scroll-box a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 30px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+}
+
+.scroll-box a span::before {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  content: "";
+  width: 3px;
+  height: 6px;
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  -webkit-animation: scroller 1.5s infinite;
+  animation: scroller 1.5s infinite;
+  box-sizing: border-box;
+}
+
+/* 반응형 */
+@media screen and (max-width:768px) {
+
+  .company-role {
+    padding: 0 30px 80px 30px;
+    background-color: #fff;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .eco-companybox {
+    padding: 80px 30px 40px 30px;
+  }
+
+  .eco-companybox .w-maintitle {
+    color: rgba(255, 255, 255, 90%);
+    font-family: 'Outfit';
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  .eco-companybox .b-maintitle {
+    color: rgba(0, 0, 0, 90%);
+    font-family: 'Outfit';
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  .eco-companybox .b-maintext {
+    white-space: initial;
+    color: rgba(0, 0, 0, 80%);
+  }
+
+  .cpany-text-box {
+    z-index: 1;
+    padding: 0;
+  }
+
+  .eco-cpany-borbox {
+    position: relative;
+    background: url(../image/ecompany_introback.jpg) no-repeat center;
+    width: 330px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 25px 40px 25px;
+  }
+
+  .company-wtitle {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .company-gtitle {
+    font-size: 24px;
+    color: #3DD495;
+    padding-bottom: 16px;
+    font-weight: 500;
+  }
+
+  .cpany-borderhidden {
+    position: absolute;
+    background: linear-gradient(rgba(0, 0, 0, 0%) 0%,
+        rgba(0, 0, 0, 80%)30%,
+        rgba(0, 0, 0, 90%)100%);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+  }
+
+  .cpany-hidden {
+    position: absolute;
+    background: linear-gradient(rgba(0, 0, 0, 0%) 0%,
+        rgba(0, 0, 0, 80%)30%,
+        rgba(0, 0, 0, 90%)100%);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+  }
+
+  .w-maintext {
+    white-space: initial;
+    color: rgb(255, 255, 255, 90%);
+    font-size: 16px;
+  }
+
+  .cpany-box1 {
+    background: url(../image/ecompany_introback2.jpg) no-repeat center;
+    padding: 0 25px 40px 25px;
+  }
+
+  .cpany-box2 {
+    background: url(../image/ecompany_introback3.jpg) no-repeat center;
+    padding: 0 25px 40px 25px;
+  }
+
+  .cpany-box2 .company-gtitle {
+    padding: 0;
+  }
+
+  .cpany-box2 .company-wtitle {
+    padding-bottom: 16px;
+  }
+
+  .eco-companyintro-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    justify-content: flex-end;
+    height: 430px;
+  }
+  .can-infobox {
+    padding: 24px 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .contact .ct-box {
+    padding: 100px 30px;
+  }
+
+  .exportintro-box {
+    padding: 100px 30px;
+  }
+
+  .can-infoarea {
+    flex-wrap: wrap;
+  }
+
+  .ceo-massage {
+    padding: 80px 30px;
+  }
+
+  .top-green-sec {
+    border-top-right-radius: 100px;
+  }
+
+  .about-mission {
+    padding: 80px 30px;
+  }
+
+
+}
+
+@media screen and (max-width:430px) {
+
+  .main-content video,
+  .hidden-ground {
+    border-top-right-radius: 185px;
+  }
+
+  .export-quantity .quantity-num {
+    font-size: 50px;
+  }
+
+  .eco-logo {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .eco-downlogo {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
+
+  .eco-maintxt {
+    left: 40px;
+    top: 45%;
+  }
+
+  .eco-maintxt .logo-sub {
+    font-size: 16px;
+    padding: 16px 0 20px 0;
+  }
+
+  .eco-introarea .intro-text {
+    font-size: 30px;
+  }
+
+  .annual-growth .annual-container {
+    padding: 100px 30px;
+    border-top-right-radius: 100px;
+  }
+
+  .usealum {
+    padding: 100px 30px;
+  }
+}
+
+
+/* 키프레임 */
+@-webkit-keyframes scroller {
+  0% {
+    top: 10px;
+  }
+
+  50% {
+    top: 15px;
+  }
+
+  100% {
+    top: 10px;
+  }
+}
