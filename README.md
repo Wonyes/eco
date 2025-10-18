@@ -7,7 +7,7 @@
 ## 🔹 프로젝트 특징
 
 - **스크롤 기반 애니메이션**
-  - IntersectionObserver와 GSAP를 활용하여 화면에 나타나는 요소마다 자연스러운 등장 효과 구현
+  - IntersectionObserver와 GSAP를 활용하여 화면에 나타나는 요소마다 자연스러운 등장 효과
   - `.eco-slide-up`, `.eco-load-up`, `.eco-fade-in` 등 클래스별 staggered animation 적용
 
 - **차트 애니메이션**
@@ -43,15 +43,30 @@
 
 ---
 
-## ⚡ 주요 코드 구조
+## ⚡ 코드 구조 & 흐름
 
-```javascript
-// 연도별 그래프 애니메이션
-function annualGraph() { ... }
+📄 페이지 로드
+  - mainUp(): 메인 텍스트 등장
 
-// 메인 화면 등장 애니메이션
-function mainUp() { ... }
+🖱 스크롤 이벤트
+  - annualGraph(): 연도별 차트 애니메이션 + 툴팁 숫자 증가
+  - videoAutoPlay(): 비디오 자동 재생
+  - mainTextUp(): 텍스트 슬라이드 업
+  - useBox(): eco-fade-in 섹션 등장
+  - clientbox(): client-show 섹션 등장
 
-// IntersectionObserver 기반 섹션별 애니메이션
-function mainTextUp() { ... }
-function useBox() { ... }
+🏢 섹션별 애니메이션
+  - About: 아이콘, 타이틀 등장
+  - Mission: 타이틀 등장
+  - Value: 정보 박스 등장
+  - Can: 박스 등장
+  - Vision: 텍스트 + 연도별 성장률 애니메이션
+  - CEO: CEO 박스 등장
+  - Global: 글로벌 박스 등장
+  - Alum: Alumni 박스 등장
+  - Business: 사업 영역 박스 등장
+
+🍔 메뉴
+  - 메뉴 토글 클릭: 드롭다운 메뉴 Show/Hide
+  - 메뉴 링크 클릭 시 닫기
+
