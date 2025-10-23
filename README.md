@@ -34,7 +34,7 @@
 
 - **Frontend**
   - HTML5 / CSS3 / JavaScript
-  - GSAP, TweenMax
+  - GSAP
   - IntersectionObserver API
 
 - **기타**
